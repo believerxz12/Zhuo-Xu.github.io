@@ -1601,12 +1601,21 @@ div.paginate-container li:nth-last-child(2) a:after {
     }
 }
 
-.publications {
+/* .publications {
     max-width: -webkit-calc(100% - (30px / 2));
     max-width: calc(100% - (30px / 2));
     margin-top: 10px;
     font-family: 'Roboto', sans-serif, Helvetica
+} */
+
+.publications {
+    max-width: calc(100% - (30px / 2));  /* 保留这一句也可以 */
+    margin: 10px auto;  /* ✅ 关键：上下 10px，左右 auto，即水平居中 */
+    font-family: 'Roboto', sans-serif, Helvetica;
+    padding: 0 15px;     /* 可选：为左右增加一点内边距 */
 }
+
+
 
 .pub-list {
     overflow: auto
